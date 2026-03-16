@@ -21,17 +21,28 @@ public class GunPickUp : MonoBehaviour
         if(!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull)
         {
             pickUp();
+            transform.SetParent(Guncontainer);
+            transform.position = distanceToPlayer;
         }
 
         if(equipped && Input.GetKeyDown(KeyCode.Q))
         {
             Drop();
+            
         }
     }
 
     private void pickUp()
     {
         equipped = true;
+        rb.isKinematic = true;
+        col.isTrigger = true;
+    }
 
+    private void Drop()
+    {
+        equipped = false;
+        rb.isKinematic = false;
+        col.isTrigger = false;
     }
 }
