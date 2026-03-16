@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ff958f2e5463441acef689723d549b, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: 
+  artworkPrefab: {fileID: 919132149155446097, guid: a2204541c348121479083a75498373f5, type: 3}
+  muzzleEffect: {fileID: 0}
+  firingSound: {fileID: 0}
+  chamberSound: {fileID: 0}
+  fireRate: 8
+  projectileForce: 3
+  projectileSpread: 2
+  ammoCount: 9
